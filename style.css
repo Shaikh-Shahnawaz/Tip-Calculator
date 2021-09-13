@@ -1,0 +1,40 @@
+
+.my-container-div{
+    height: 92vh;
+}
+.my-card-div{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.h4-spacing, .btn-spacing{
+    letter-spacing: 8px;
+}
+.my-card{
+    margin-top: 2em;
+}
+
+h1{
+    text-align: center;
+    background-color: grey;
+    color: white;
+    padding: 0.2em!important;
+    letter-spacing: 6px;
+}
+
+@media all and (max-width:460px) {
+    .my-card{
+        max-width:20rem!important;
+    }
+    h1{
+        letter-spacing: 0px;
+    }
+    .my-container-div{
+        height: 100%;
+    }
+}
+
