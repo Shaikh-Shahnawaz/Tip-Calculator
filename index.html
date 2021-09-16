@@ -36,7 +36,7 @@
 
             <div class="mb-2">
               <label for="exampleInputName" class="form-label">Enter your bill amount</label>
-              <input placeholder="bill amount" validate id="billAmount" type="number" class="form-control" required>
+              <input min=0 oninput="validity.valid||(value='');" placeholder="bill amount" validate id="billAmount" type="number" class="form-control" required>
               <span id="span-id"> </span>
             </div>
             <div class="mb-2">
@@ -51,7 +51,7 @@
           </div>
           <div class="mb-2">
             <label for="exampleInputName" class="form-label">How many people are sharing the bill ?</label>
-            <input placeholder="number of people"  id="totalPerson" type="number" class="form-control required " required> 
+            <input min=0 oninput="validity.valid||(value='');" placeholder="number of people"  id="totalPerson" type="number" class="form-control required " required> 
             <span id="span-id3"></span>
           </div>
           
